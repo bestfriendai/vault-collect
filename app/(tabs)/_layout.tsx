@@ -37,7 +37,6 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Collections',
-          headerLargeTitle: true,
           tabBarIcon: ({ focused }) => (
             <TabIcon icon="📦" label="Collections" focused={focused} />
           ),
@@ -47,7 +46,6 @@ export default function TabLayout() {
         name="search"
         options={{
           title: 'Search',
-          headerLargeTitle: true,
           tabBarIcon: ({ focused }) => (
             <TabIcon icon="🔍" label="Search" focused={focused} />
           ),
@@ -57,7 +55,6 @@ export default function TabLayout() {
         name="stats"
         options={{
           title: 'Stats',
-          headerLargeTitle: true,
           tabBarIcon: ({ focused }) => (
             <TabIcon icon="📊" label="Stats" focused={focused} />
           ),

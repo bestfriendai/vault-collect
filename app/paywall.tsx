@@ -9,8 +9,8 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import * as Haptics from 'expo-haptics';
-import { useVaultStore } from '../../src/store/vaultStore';
-import { colors, spacing, radius, fontSize, fontWeight, shadows } from '../../src/theme';
+import { useVaultStore } from '@/src/store/vaultStore';
+import { colors, spacing, radius, fontSize, fontWeight, shadows } from '@/src/theme';
 
 interface Plan {
   id: string;

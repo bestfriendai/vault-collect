@@ -115,6 +115,35 @@ eas build -p ios --profile production
 eas build -p android --profile production
 ```
 
+## API Configuration
+
+### Environment Variables
+
+Create a `.env` file in the project root:
+
+```bash
+# Collectibles API (optional - for AI identification)
+COLLECTIBLES_API_KEY=your_collectibles_api_key
+COLLECTIBLES_API_URL=https://api.vaultcollect.com/v1
+
+# AI Vision Service
+VISION_API_KEY=your_vision_api_key
+```
+
+### RevenueCat Configuration
+
+1. Create an account at [RevenueCat.com](https://revenuecat.com)
+2. Create products in App Store Connect / Google Play Console:
+   - Monthly: $4.99/month - `vault_collect_monthly`
+   - Annual: $29.99/year - `vault_collect_annual`
+3. Configure products in RevenueCat dashboard
+4. Add your API key:
+
+```typescript
+// src/services/purchases.ts
+export const REVENUECAT_API_KEY = 'your_revenuecat_public_key';
+```
+
 ## License
 
 Private - All rights reserved
